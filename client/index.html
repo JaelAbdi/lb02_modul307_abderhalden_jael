@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="css/input-form.css" />
+    <title>Form Validator</title>
+</head>
+<body>
+<div class="container">
+    <form id="form" class="form">
+        <h2>Du willst mehr wissen? Registrier dich jetzt!</h2>
+        <div class="form-control">
+            <label for="vorname">Vorname</label>
+            <input type="text" id="vorname" placeholder="Vornamen eingeben" />
+            <small>Error message</small>
+        </div>
+        <div class="form-control">
+            <label for="nachname">Name</label>
+            <input type="text" id="nachname" placeholder="Name eingebn" />
+            <small>Error message</small>
+        </div>
+        <div class="form-control">
+            <label for="alter">Alter</label>
+            <input type="number" id="alter" max="99" style="width:70px;"
+                   pattern="(1[2-9]|[2-9][0-9]))"/>
+            <small>Error message</small>
+        </div>
+        <div class="form-control">
+            <label for="telefonnummer">Telefonnummer</label>
+            <input type="tel" id="telefonnummer" placeholder="076XXXXXXX" />
+            <small>Error message</small>
+        </div>
+        <div class="form-control">
+            <label for="email">Email Adresse</label>
+            <input type="text" id="email" placeholder="Email Adresse eingeben"/>
+            <small>Error message</small>
+        </div>
+        <div class="form-control">
+            <label for="passwort">Passwort</label>
+            <input type="password" id="passwort" placeholder="Passwort eingeben" />
+            <small>Error message</small>
+        </div>
+        <div class="form-control">
+            <label for="passwort2">Passwort Bestätigung</label>
+            <input type="password" id="passwort2" placeholder="Passwort bestätigen" />
+            <small>Error message</small>
+        </div>
+        <button type="submit">bestätigen</button>
+    </form>
+</div>
+
+
+<script src="js/validation.js"></script>
+</body>
+</html>
+
